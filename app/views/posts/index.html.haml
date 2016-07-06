@@ -1,1 +1,5 @@
 %h1 Instapic
+-@posts.each do |post|
+  %div= image_tag post.image.url(:medium)
+  %h1
+    %strong= post.caption
